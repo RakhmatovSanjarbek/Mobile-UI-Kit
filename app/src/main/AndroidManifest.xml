@@ -45,6 +45,12 @@
         <activity
             android:name=".BlogPostPageActivity"
             android:exported="true" />
+        <activity
+            android:name=".ExpensesPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalendarPageActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
