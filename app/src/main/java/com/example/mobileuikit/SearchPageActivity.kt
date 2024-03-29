@@ -2,21 +2,21 @@ package com.example.mobileuikit
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class FeedPageActivity : AppCompatActivity() {
+class SearchPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_feed_page)
+        setContentView(R.layout.activity_search_page)
 
-        findViewById<LinearLayout>(R.id.content).setOnClickListener {
+        findViewById<TextView>(R.id.item_1).setOnClickListener {
             startActivity(
-                Intent(this,ContentPageActivity::class.java)
+                Intent(this,BlogPostPageActivity::class.java)
             )
         }
     }

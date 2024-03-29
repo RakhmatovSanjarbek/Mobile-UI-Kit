@@ -8,15 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class FeedPageActivity : AppCompatActivity() {
+class MarketPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_feed_page)
+        setContentView(R.layout.activity_market_page)
 
-        findViewById<LinearLayout>(R.id.content).setOnClickListener {
+        findViewById<LinearLayout>(R.id.post_1).setOnClickListener {
             startActivity(
-                Intent(this,ContentPageActivity::class.java)
+                Intent(this,CongratulationsPageActivity::class.java)
             )
         }
     }

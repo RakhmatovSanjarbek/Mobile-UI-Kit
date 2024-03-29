@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DB075"
+    tools:context=".CongratulationsPageActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations!"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consequat velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco exercitation. Ullamco tempor adipisicing et voluptate duis sit esse aliqua esse ex dolore esse. Consequat velit qui adipisicing sunt."
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginTop="84dp"
+            android:layout_marginHorizontal="16dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/click_me"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#5DB075"
+            app:cornerRadius="100dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="230dp"
+            android:text="Click Me"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secondary Action"
+            android:gravity="center_horizontal"
+            android:textColor="#5DB075"
+            android:textSize="16sp"
+            android:layout_marginTop="288dp"
+            android:layout_marginBottom="32dp"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

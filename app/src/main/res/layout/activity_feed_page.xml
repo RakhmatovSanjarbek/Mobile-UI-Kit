@@ -76,6 +76,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
+                android:id="@+id/content"
                 android:layout_width="match_parent"
                 android:layout_height="77dp"
                 android:orientation="horizontal">
@@ -270,13 +271,53 @@
                 android:layout_height="1dp"
                 android:background="#E8E8E8"
                 android:layout_marginLeft="66dp"/>
-            <androidx.cardview.widget.CardView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="228dp"
-                android:layout_marginTop="16dp"
-                app:cardBackgroundColor="#F0F0F0"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="0dp"/>
+                android:layout_height="358dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="#F0F0F0"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"/>
+
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Header"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/content_1"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/deckreption_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="He'll want to use your yacht, and I don't want this thing smelling like fish."
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/title_1" />
+                <TextView
+                    android:id="@+id/time_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8m ago"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/deckreption_1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pagination"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -479,13 +520,53 @@
                 android:layout_height="1dp"
                 android:background="#E8E8E8"
                 android:layout_marginLeft="66dp"/>
-            <androidx.cardview.widget.CardView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="228dp"
-                android:layout_marginTop="16dp"
-                app:cardBackgroundColor="#F0F0F0"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="0dp"/>
+                android:layout_height="358dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/content_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="#F0F0F0"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"/>
+
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Header"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/content_2"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/deckreption_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="He'll want to use your yacht, and I don't want this thing smelling like fish."
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/title_2" />
+                <TextView
+                    android:id="@+id/time_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8m ago"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/deckreption_2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pagination"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

@@ -2,21 +2,19 @@ package com.example.mobileuikit
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
-class FeedPageActivity : AppCompatActivity() {
+class CongratulationsPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_feed_page)
+        setContentView(R.layout.activity_congratulations_page)
 
-        findViewById<LinearLayout>(R.id.content).setOnClickListener {
+        findViewById<MaterialButton>(R.id.click_me).setOnClickListener{
             startActivity(
-                Intent(this,ContentPageActivity::class.java)
+                Intent(this,SearchPageActivity::class.java)
             )
         }
     }

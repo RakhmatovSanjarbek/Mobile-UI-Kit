@@ -30,6 +30,21 @@
         <activity
             android:name=".FeedPageActivity"
             android:exported="true" />
+        <activity
+            android:name=".ContentPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MarketPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CongratulationsPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BlogPostPageActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
